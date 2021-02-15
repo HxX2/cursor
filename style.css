@@ -106,7 +106,7 @@ h1 {
 }
 
 .scaleup {
-  transform: scale(2800) translateX(-100%) translateY(-100%);
+  transform: scale(3000) translateX(-100%) translateY(-100%);
   transition: 900ms;
 }
 

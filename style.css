@@ -115,6 +115,10 @@ h1 {
   transition: 900ms;
 }
 
+.opac {
+  opacity: 0%;
+}
+ 
 img {
   z-index: 2;
   position: absolute;

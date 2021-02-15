@@ -67,12 +67,13 @@ h1.addEventListener('click', () => {
     if (timesClicked%2==0) {
         h1.addEventListener('click', () => {
             switsh.classList.add('scaledown');
-            switsh.classList.remove('scaleup')
+            switsh.classList.remove('scaleup');
+            setTimeout(() =>  { switsh.classList.add('opac'); }, 900);
         })
     } else {
         h1.addEventListener('click', () => {
             switsh.classList.add('scaleup');
-            switsh.classList.remove('scaledown')
+            switsh.classList.remove('scaledown');
         })
     }
 })

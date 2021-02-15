@@ -51,7 +51,7 @@ h1.addEventListener('mouseover', () => {
 
 document.addEventListener('click', () => {
     if(cir.classList.contains('change')){
-        cir.removeClass('clicks');
+        cir.classList.remove('clicks');
        }
     else{
         cir.classList.add('clicks');

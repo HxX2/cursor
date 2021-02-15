@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+  user-select: none;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links,
+h1 {
+  flex: 1;
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  backdrop-filter: invert(100%);
+  z-index: 69;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+.cir {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  backdrop-filter: invert(100%);
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+.grow {
+  transform: scale(2) translateX(-25%) translateY(-25%);
+}
+
+.change {
+  transform: scale(3.6) translateX(-14%) translateY(-14%);
+}
+
+.shrink, .shrin, .clicks {
+  transform: scale(0.01) translateX(-5000%) translateY(-5000%);
+}
+
+
+.h1 {
+  position: absolute;
+  height: 31.200px;
+  width: 43.200px;
+}
+
+.front-desc {
+  position: absolute;
+  top: 22rem;
+  left: 53rem;
+  transform: scale(1.5);
+
+}
+
+.dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: invert(100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.switsh {
+  position: absolute;
+  height: 0.01rem;
+  width: 0.01rem;
+  left: 6.15rem;
+  top: 2.55rem;
+  transform: translate(-50%, -50%);
+  backdrop-filter: invert(100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.scaleup {
+  transform: scale(2800) translateX(-100%) translateY(-100%);
+  transition: 900ms;
+}
+
+.scaledown {
+  transform: scale(1) translateX(-100%) translateY(-100%);
+  transition: 900ms;
+}
+
+img {
+  z-index: 2;
+  position: absolute;
+  transform: scale(0.5);
+  top: -5rem;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}

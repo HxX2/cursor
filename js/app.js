@@ -65,17 +65,12 @@ h1.addEventListener('click', () => {
     timesClicked++;
 
     if (timesClicked%2==0) {
-        h1.addEventListener('click', () => {
             switsh.classList.add('scaledown');
             switsh.classList.remove('scaleup');
             setTimeout(() =>  { switsh.classList.add('opac'); }, 800);
-        })
     } else {
-        h1.addEventListener('click', () => {
-            switsh.classList.add('scaleup');
-            switsh.classList.remove('scaledown');
             switsh.classList.remove('opac');
-            setTimeout(() =>  { switsh.classList.remove('opac'); }, 800);
-        })
+            setTimeout(() => { switsh.classList.add('scaleup'); }, 150);
+            setTimeout(() => { switsh.classList.remove('scaledown'); }, 150);
     }
 })

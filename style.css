@@ -117,6 +117,7 @@ h1 {
 
 .opac {
   opacity: 0%;
+  transition: 0s !important;
 }
  
 img {

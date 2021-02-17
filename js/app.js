@@ -50,7 +50,7 @@ h1.addEventListener('mouseover', () => {
 
 
 document.addEventListener('click', () => {
-    if(cir.classList.contains('change')){
+    if(cir.classList.contains('change') || cir.classList.contains('shrin')){
         cir.classList.remove('clicks');
        }
     else{
